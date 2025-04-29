@@ -1,0 +1,223 @@
+*,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    transition: all 0.5s;
+    /* font-family: "Philosopher", sans-serif */
+}
+/* variables */
+
+:root{
+    --sarlavhalarColor: #150C01;
+    --sarlavhaFontweight: 700;
+}
+
+.container{
+    max-width: 1240px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 2rem;
+    align-items: center;
+}
+.nav-child{
+    font-size: 16px;
+    color: #150C01;
+    font-weight: 500;
+    opacity: 60%;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+}
+.tugma{
+    padding: 13px 30px;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #DC780B;
+    border-radius: 5px;
+    color: #fff;
+    border: 2px solid transparent;
+}
+
+.hero-left{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.7rem;
+}
+.hero-right{
+    width: 55%;
+    position: absolute;
+    z-index: -2;
+    left: 50%;
+}
+
+.hero-sarlavha{
+    font-family: "Philosopher", sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #150C01;
+}
+.matn{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #150C01;
+}
+.wrapper-btns{
+    max-width: 358px;
+    display: flex;
+    gap: 2rem;
+}
+.tugma{
+    border-color: transparent;
+}
+
+.tug{
+    background-color: transparent;
+    border:  2px solid #DC780B;
+    color: #DC780B;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;   
+}
+.hero-img{
+    width: 100%;
+}
+
+
+.tugma:hover{
+    background-color: transparent;
+    border-color: #DC780B;
+    color: #DC780B;
+    cursor: pointer;
+}
+
+.tug:hover{
+    background-color: #DC780B;
+    border-color: transparent;
+    color: #fff;
+}
+
+.nav-child:hover{
+    color: #DC780B;
+}
+
+#header2{
+    display: none;
+}
+.second-page-span{
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    color: #DC780B;
+}
+
+.wrapper-img{
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: #8FA632;
+    max-width: 88px;
+    max-height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-1-rasm{
+    max-width: 47px;
+    height: auto;
+}
+.box-sarlavha{
+    color: var(--sarlavhalarColor);
+    font-weight: var(--sarlavhaFontweight);
+    font-size: 	1.5625rem;
+    margin-top: 33px;
+}
+
+.box-matn{
+    line-height: 24px;
+    color: var(--sarlavhalarColor);
+    font-weight: 400;
+    margin-top: 1rem;
+    text-align: center;
+}
+.box-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 28%;
+}
+.wrapper-delivery{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+@media(max-width: 768px){
+    .headerr{
+        display: none;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .hero-left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-right{
+        width: 100%;
+    }
+    .hero-img{
+        width: 100%;
+    }
+    .hero-sarlavha{
+        text-align: center;
+    }
+    .hero-right{
+        position: unset;
+    }
+    .wrapper-btns{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+    }
+    .tugma{
+        width: 100%;
+    }
+}
+
+
