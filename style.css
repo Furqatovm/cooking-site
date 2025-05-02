@@ -529,8 +529,13 @@ ul{
     padding-bottom: 1rem;
     justify-content: center;
 }
+.plus:hover{
+    cursor: pointer;
+}
 
-
+.footer-logo:hover{
+    transform: scale(1.1);
+}
 
 
 
